@@ -1,0 +1,55 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "description": "הכניסו את פרטיכם. שימו לב שהודעת OTP עשויה להגיע, ניתן להתעלם ממנה.",
+        "data": {
+          "user_id": "תעודת זהות",
+          "phone": "טלפון"
+        }
+      }
+    },
+    "error": {
+      "auth": "תעודת זהות/טלפון לא נכונים.",
+      "connection": "לא ניתן להתקשר לשרת.",
+      "unknown": "שגיאה לא מוכרת."
+    }
+  },
+  "services": {
+    "debug_get_coordinator_data": {
+      "name": "הבא מידע מפזגז אנרג'י",
+      "description": "הדפס מידע קיים בקורדינטור של פזגז אנרג'י."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "last_month_cost": {
+        "name": "עלות החשבון בחודש הקודם",
+        "state_attributes": {
+          "month": {
+            "name": "חודש"
+          },
+          "invoice_number": {
+            "name": "מס' החשבונית"
+          }
+        }
+      },
+      "package": {
+        "name": "חבילה",
+        "state_attributes": {
+          "description": {
+            "name": "תאור"
+          },
+          "discount": {
+            "name": "הנחה"
+          }
+        }
+      }
+    },
+    "binary_sensor": {
+      "is_smart_meter": {
+        "name": "האם מונה חכם?"
+      }
+    }
+  }
+}
