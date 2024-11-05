@@ -1,0 +1,13 @@
+{
+  "domain": "pazgas_power",
+  "name": "PazGas Power",
+  "codeowners": [
+    "@GuyKh"
+  ],
+  "config_flow": true,
+  "documentation": "https://github.com/GuyKh/pazgas-power-custom-component",
+  "iot_class": "cloud_polling",
+  "issue_tracker": "https://github.com/GuyKh/pazgas-power-custom-component/issues",
+  "requirements": ["pazgas-power==0.0.5"],
+  "version": "0.0.1"
+}

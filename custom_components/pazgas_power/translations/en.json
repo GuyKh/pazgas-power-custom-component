@@ -1,0 +1,55 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "description": "Enter your details. Note that OTP message can be sent, you can ignore it.",
+        "data": {
+          "user_id": "User ID",
+          "phone": "Phone"
+        }
+      }
+    },
+    "error": {
+      "auth": "UserId/Phone is wrong.",
+      "connection": "Unable to connect to the server.",
+      "unknown": "Unknown error occurred."
+    }
+  },
+  "services": {
+    "debug_get_coordinator_data": {
+      "name": "Get PazGas Power Coordinator Data",
+      "description": "Fetch and return the coordinator data for debugging purposes."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "last_month_cost": {
+        "name": "Last Month Cost",
+        "state_attributes": {
+          "month": {
+            "name": "Month"
+          },
+          "invoice_number": {
+            "name": "Invoice number"
+          }
+        }
+      },
+      "package": {
+        "name": "Package",
+        "state_attributes": {
+          "description": {
+            "name": "Description"
+          },
+          "discount": {
+            "name": "Discount"
+          }
+        }
+      }
+    },
+    "binary_sensor": {
+      "is_last_invoice_paid": {
+        "name": "Is Smart Meter?"
+      }
+    }
+  }
+}
