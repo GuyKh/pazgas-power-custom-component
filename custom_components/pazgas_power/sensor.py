@@ -38,9 +38,9 @@ class PazGasPowerSensorEntityDescription(
 
 def _generate_discount_text(package: Package) -> str:
     txt = ""
-    txt += f"{package.discount_text }" if package.discount_text else ""
-    txt += f" {package.discount_value }" if package.discount_value else ""
-    txt += f"{package.currency }" if package.currency else ""
+    txt += f"{package.discount_text}" if package.discount_text else ""
+    txt += f" {package.discount_value}" if package.discount_value else ""
+    txt += f"{package.currency}" if package.currency else ""
     return txt
 
 
