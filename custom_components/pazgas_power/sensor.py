@@ -50,9 +50,11 @@ ENTITY_DESCRIPTIONS = [
         device_class=SensorDeviceClass.MONETARY,
         native_unit_of_measurement=UNIT_ILS,
         suggested_display_precision=3,
-        value_fn=lambda data: data[LAST_MONTH_INVOICE_KEY].invoice_total_price
-        if data[LAST_MONTH_INVOICE_KEY]
-        else None,
+        value_fn=lambda data: (
+            data[LAST_MONTH_INVOICE_KEY].invoice_total_price
+            if data[LAST_MONTH_INVOICE_KEY]
+            else None
+        ),
         custom_attrs_fn=lambda data: {
             "month": get_invoice_month(data[LAST_MONTH_INVOICE_KEY])
             if data[LAST_MONTH_INVOICE_KEY]
@@ -64,9 +66,9 @@ ENTITY_DESCRIPTIONS = [
     ),
     PazGasPowerSensorEntityDescription(
         key="package",
-        value_fn=lambda data: data[MY_PACKAGE_KEY].name
-        if data[MY_PACKAGE_KEY]
-        else None,
+        value_fn=lambda data: (
+            data[MY_PACKAGE_KEY].name if data[MY_PACKAGE_KEY] else None
+        ),
         custom_attrs_fn=lambda data: {
             "description": data[MY_PACKAGE_KEY].description
             if data[MY_PACKAGE_KEY]
