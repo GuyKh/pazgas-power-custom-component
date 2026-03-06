@@ -7,7 +7,7 @@ name = "pypi"
 colorlog = "==6.10.1"
 homeassistant = "==2024.6.0"
 pazgas-power = "==0.0.5"
-ruff = "==0.15.4"
+ruff = "==0.15.5"
 
 [dev-packages]
 
