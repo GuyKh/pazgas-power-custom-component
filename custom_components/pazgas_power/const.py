@@ -1,4 +1,8 @@
-"""Constants for PazGas Power."""
+"""
+Copyright (c) 2024-2026  Guy Khmelnitsky.
+
+Constants for PazGas Power.
+"""
 
 from logging import Logger, getLogger
 

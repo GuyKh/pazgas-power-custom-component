@@ -1,4 +1,8 @@
-"""DataUpdateCoordinator for PazGas Power."""
+"""
+Copyright (c) 2024-2026  Guy Khmelnitsky.
+
+DataUpdateCoordinator for PazGas Power.
+"""
 
 from __future__ import annotations
 

@@ -1,4 +1,8 @@
-"""Custom types for PazGas Power."""
+"""
+Copyright (c) 2024-2026  Guy Khmelnitsky.
+
+Custom types for PazGas Power.
+"""
 
 from __future__ import annotations
 

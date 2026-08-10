@@ -1,4 +1,8 @@
-"""Adds config flow for PazGas Power."""
+"""
+Copyright (c) 2024-2026  Guy Khmelnitsky.
+
+Adds config flow for PazGas Power.
+"""
 
 from __future__ import annotations
 

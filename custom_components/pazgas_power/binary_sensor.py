@@ -1,4 +1,8 @@
-"""Binary sensor platform for PazGas Power."""
+"""
+Copyright (c) 2019 - 2024  Joakim Sørensen @GuyKh.
+
+Binary sensor platform for PazGas Power.
+"""
 
 from __future__ import annotations
 
