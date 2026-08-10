@@ -1,4 +1,8 @@
-"""PazGasPoweryEntity class."""
+"""
+Copyright (c) 2024-2026  Guy Khmelnitsky.
+
+PazGasPoweryEntity class
+"""
 
 from __future__ import annotations
 

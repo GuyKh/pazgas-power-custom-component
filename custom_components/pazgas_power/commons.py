@@ -1,4 +1,8 @@
-"""Common methods for PazGas Power."""
+"""
+Copyright (c) 2024-2026  Guy Khmelnitsky.
+
+Common methods for PazGas Power.
+"""
 
 from datetime import date
 
